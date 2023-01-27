@@ -16,7 +16,7 @@ jobs:
       with:
         python-version: '3.10'
     - name: Install deps
-      run: pip3 install --user requests beautifulsoup4 pandas csv
+      run: pip3 install --user requests beautifulsoup4 pandas
     - run: python python/football.py
     - name: Commit files
       run: |

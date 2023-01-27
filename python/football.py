@@ -4,7 +4,6 @@ import re
 import json
 from json import dumps
 import pandas
-import csv
 
 # Load URL in beautiful soup
 url = 'https://theathletic.com/2594478/2021/06/15/euro-2020-squads-teams-list/'
