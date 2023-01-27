@@ -18,5 +18,19 @@ jobs:
     - name: Install deps
       run: pip3 install --user requests beautifulsoup4 pandas
     - run: python python/football.py
-
+    - name: Commit files
+      run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git config pull.rebase false
+          git pull origin master
+          mv TextFootball.json python/TextFootball.json
+          git add python/TextFootball.json
+          git commit -m "update json"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          directory: automated/selenium
+          branch: ${{ github.ref }}
 
