@@ -4,6 +4,7 @@ import re
 import json
 from json import dumps
 import pandas
+import csv
 
 # Load URL in beautiful soup
 url = 'https://theathletic.com/2594478/2021/06/15/euro-2020-squads-teams-list/'
@@ -24,3 +25,4 @@ text_football = soup.get_text()
  # write to file
 with open('TextFootball.json', "w") as outfile:
     json.dump(text_football, outfile)
+    
