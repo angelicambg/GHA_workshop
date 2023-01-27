@@ -27,7 +27,7 @@ jobs:
           git pull origin main
           mv TextFootball.json python/TextFootball.json
           git add python/TextFootball.json
-          git commit -m "update json"
+          git commit -m "update json"|| echo "Nothing to update"
           git push
     
   
