@@ -1,0 +1,26 @@
+{
+    "id": "7CB1287F",
+    "path": "~/git/talks/GHA_r_py_q/.github/workflows/python_r.yml",
+    "project_path": null,
+    "type": "yaml",
+    "hash": "3934580080",
+    "contents": "",
+    "dirty": false,
+    "created": 1674726839092.0,
+    "source_on_save": false,
+    "relative_order": 6,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "27,0",
+        "scrollLine": "9"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1674727452,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1674727452141,
+    "read_only": false,
+    "read_only_alternatives": []
+}

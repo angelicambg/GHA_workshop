@@ -1,0 +1,26 @@
+{
+    "id": "CDE38D1E",
+    "path": "~/git/talks/GHA_r_py_q/.github/workflows/publish.yml",
+    "project_path": null,
+    "type": "yaml",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1674685904964.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "8,2",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1674725442,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1674725442135,
+    "read_only": false,
+    "read_only_alternatives": []
+}

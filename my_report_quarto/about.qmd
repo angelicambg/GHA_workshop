@@ -1,0 +1,42 @@
+---
+title: "teams"
+---
+
+About this site
+
+```{r}
+library(rjson)
+library(tidyverse)
+
+library(echarts4r)
+
+text_football <- fromJSON(file = "../python/TextFootball.json")
+algo <- str_split(text_football, pattern = "Goalkeepers")
+
+split_teams <- str_match_all(text_football, pattern = "\\(\\w+\\)")
+count_teams <- tibble(
+  teams = str_remove(split_teams[[1]], pattern = "\\(") |> 
+  str_remove(pattern = "\\)")
+  ) |> 
+  count(teams)
+
+count_teams |> 
+  filter(n > 5) |> 
+  e_charts(teams) |> 
+  e_bar(n, name = "Serie 1") |> 
+  e_title("Bar and step charts") %>%
+  e_flip_coords()
+
+count_teams |> 
+  e_color_range(n, color) |> 
+  e_charts() |> 
+  e_cloud(teams, n, color, shape = "circle", sizeRange = c(3, 15)) |> 
+  e_title("Wordcloud", "Random strings")
+
+count_teams |> 
+  filter(n > 5) |> 
+  e_charts() |> 
+  e_funnel(n, teams) |> 
+  e_title("teams")
+
+```
