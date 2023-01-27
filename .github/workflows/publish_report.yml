@@ -26,9 +26,5 @@ jobs:
           mv TextFootball.json python/TextFootball.json
           git add python/TextFootball.json
           git commit -m "update json"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-          github_token: ${{ secrets.PAT }}
-          directory: python
-          branch: ${{ github.ref }}
+          git push
+          
