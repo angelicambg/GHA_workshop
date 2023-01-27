@@ -24,8 +24,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git config pull.rebase false
           git pull origin master
-          mv TextFootball.json python/TextFootball.json
-          git add python/TextFootball.json
+          git TextFootball.json
           git commit -m "update json"
     - name: Push changes
       uses: ad-m/github-push-action@master
