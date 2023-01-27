@@ -7,7 +7,6 @@ About this site
 ```{r}
 library(rjson)
 library(tidyverse)
-
 library(echarts4r)
 
 text_football <- fromJSON(file = "../python/TextFootball.json")
